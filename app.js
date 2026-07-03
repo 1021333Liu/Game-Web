@@ -9,16 +9,11 @@
       progress.style.transform = `scaleX(${ratio})`;
     }
   };
-
   updateProgress();
   window.addEventListener("scroll", updateProgress, { passive: true });
 
   if (!window.gsap) {
     document.documentElement.classList.add("no-gsap");
-    document.querySelectorAll("[data-reveal]").forEach((node) => {
-      node.style.opacity = "1";
-      node.style.transform = "none";
-    });
     return;
   }
 
@@ -62,8 +57,8 @@
         ease: "sine.inOut"
       });
       gsap.to(".die", {
-        y: (index) => [-10, 8, -14][index] || -8,
-        rotation: (index) => [10, -8, 14][index] || 8,
+        y: (i) => [-10, 8, -14][i] || -8,
+        rotation: (i) => [10, -8, 14][i] || 8,
         duration: 1.8,
         repeat: -1,
         yoyo: true,

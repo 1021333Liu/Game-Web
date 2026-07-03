@@ -4,8 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>神烬使徒 / Apostles of God-Ash</title>
-  <meta name="description" content="《神烬使徒 / Apostles of God-Ash》课堂展示网页">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <meta name="description" content="Apostles of God-Ash classroom showcase">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -20,26 +19,28 @@
       <a href="#world">世界观</a>
       <a href="#mechanic">机制</a>
       <a href="#cast">角色</a>
-      <a href="#route">展示线</a>
+      <a href="#questions">问题</a>
+      <a href="#credits">制作</a>
     </nav>
   </header>
 
   <main id="top">
-    <section class="hero scene-frame">
+    <section class="hero scene-frame" data-scene="casket">
       <img class="hero-bg" src="./assets/backgrounds/bg_silent_casket_collector_intro.png" alt="">
       <div class="hero-vignette"></div>
       <img class="collector" src="./assets/portraits/portrait_collector_halfbody.png" alt="收藏家半身像">
-      <img class="echo-figure" src="./assets/actors/player_echo.png" alt="主角无韵回响">
+      <img class="echo-figure" src="./assets/actors/player_echo.png" alt="无韵回响">
       <div class="hero-copy">
         <p class="eyebrow">Vertical Slice Concept Showcase</p>
         <h1>神烬使徒</h1>
         <p class="latin">Apostles of God-Ash</p>
+        <p class="hero-genre">一款叙事驱动的暗黑奇幻角色扮演游戏，以骰子判定推进战斗与选择</p>
         <p class="hero-line">你醒了。很好，这具身体还没有拒绝你。</p>
       </div>
       <div class="hero-meta" data-reveal>
-        <span>卡牌骰子战斗</span>
+        <span>万音失序</span>
+        <span>旧神残躯</span>
         <span>低语田野</span>
-        <span>圣匣回收循环</span>
       </div>
     </section>
 
@@ -47,74 +48,85 @@
       <div class="section-kicker" data-reveal>World</div>
       <div class="world-grid">
         <div class="world-copy" data-reveal>
-          <h2>旧神已死，世界只剩回响。</h2>
-          <p>低语田野曾经是旧神留下的粮仓区。旧神死后，过滤“万音”的秩序断裂，粮仓、名单、粮票和土地开始把饥饿当成一种规则执行。玩家扮演“无韵回响”：不会被共鸣瘟疫同化的容器，被收藏家一次次从无声圣匣中回收。</p>
+          <h2>旧神已死<br>世界只剩回响</h2>
+          <p>宇宙像一件巨大的乐器，持续释放某种频率的声音。旧神曾经用自己的身体过滤这种“万音”，从中获得神力，再把神力转化为统治世界的神权。</p>
+          <p>直到某一天，宇宙产生了自我意识。理性取代未知的最初时刻，带来的不是秩序，而是频率的崩乱。旧神承载不住变化的万音，一个接一个爆裂，只留下残躯继续影响世界。</p>
         </div>
         <div class="axiom-stack">
           <article class="axiom-card" data-reveal>
             <span>01</span>
             <h3>万音</h3>
-            <p>一种穿透物质、意识与历史的异常噪声。旧神曾过滤它，旧神死后，世界开始寻找新的频率。</p>
+            <p>不是普通声音，而是宇宙本身的频率。它穿透物质、意识与历史，旧神曾经用肉身把它过滤成神力。</p>
           </article>
           <article class="axiom-card" data-reveal>
             <span>02</span>
-            <h3>无声圣匣</h3>
-            <p>收藏家维护的复活与记录装置。失败不会被清空，只会变成下一次样本。</p>
+            <h3>旧神之死</h3>
+            <p>宇宙拥有自我意识后，频率从稳定变成崩乱。旧神的身体无法继续过滤万音，于是神权的表面稳定在一瞬间炸裂。</p>
           </article>
           <article class="axiom-card" data-reveal>
             <span>03</span>
-            <h3>低语田野</h3>
-            <p>这里不是“被怪物占领的农田”，而是一套仍在自动运转的分配系统。谷仓王把胃囊献给土地以后，田野学会了用饥饿登记每一个人。</p>
+            <h3>残躯</h3>
+            <p>旧神没有真正消失。胃、眼、骨、舌仍留在世间，并把各自代表的欲望、权力与恐惧改写成新的地貌。</p>
           </article>
+        </div>
+        <div class="world-figures" data-reveal>
+          <img class="world-collector" src="./assets/portraits/portrait_collector_halfbody.png" alt="收藏家">
+          <img class="world-player" src="./assets/actors/player_echo.png" alt="无韵回响">
         </div>
       </div>
     </section>
 
-    <section class="field-cinema">
+    <section class="field-cinema" data-scene="field">
       <img src="./assets/backgrounds/bg_empty_stomach_first_enemy.png" alt="">
+      <div class="field-actors" aria-hidden="true">
+        <img class="field-empty" src="./assets/actors/enemy_empty.png" alt="">
+        <img class="field-scarecrow" src="./assets/actors/enemy_scarecrow.png" alt="">
+        <img class="field-king" src="./assets/actors/boss_barn_king.png" alt="">
+      </div>
       <div class="cinema-copy" data-reveal>
         <p class="eyebrow">Low Whispering Field</p>
-        <h2>那里以前是粮仓，现在更像一张没合上的嘴。</h2>
-        <p>饥饿在这里不是灾难的结果，而是被保存下来的制度。空碗、镰刀、稻草人和谷仓王都不是单纯的敌人，它们是这套制度留下的四种执行方式。</p>
+        <h2>那里以前是粮仓<br>现在更像一张<br>没合上的嘴</h2>
+        <p>第一章发生在旧神之胃影响后的低语田野。胃代表贪婪、食欲和吞噬，所以这片田地不再是生产粮食的地方，而是吞噬人类的器官。</p>
+        <p>谷仓王曾是人类英雄。他打开低语田野的粮仓，把自己献祭给田野，想换取粮食救下百姓。但献祭没有终止饥饿，反而让他成为田野的收割代表。</p>
       </div>
     </section>
 
     <section id="cast" class="cast-section">
       <div class="section-head" data-reveal>
         <p class="section-kicker">Characters</p>
-        <h2>四份证词，一个胃囊。</h2>
+        <h2>四份证词 一个胃囊</h2>
       </div>
       <div class="cast-stage">
-        <article class="cast-card is-active" data-reveal>
+        <article class="cast-card is-active" data-actor="empty" data-reveal>
           <img src="./assets/actors/enemy_empty.png" alt="空腹者">
           <div>
             <span>队伍最后</span>
             <h3>空腹者</h3>
-            <p>不是丧尸，也不是恶魔。它是等待救济失败之后，仍然相信下一次会轮到自己的人。</p>
+            <p>被献祭的人相信只要自己进入田野，粮仓就会再次打开。于是他们一个接一个来了，最后只留下空碗和等待。</p>
           </div>
         </article>
-        <article class="cast-card" data-reveal>
+        <article class="cast-card" data-actor="farmer" data-reveal>
           <img src="./assets/actors/enemy_farmer.png" alt="饥民农夫">
           <div>
             <span>照常下田</span>
             <h3>饥民农夫</h3>
-            <p>他不觉得自己在杀人，只觉得播种、巡田、收割、登记，总要有人继续做完。</p>
+            <p>他不觉得自己在杀人，只觉得播种、巡田、收割、登记，总要有人继续做完。制度需要一双手，他就是那双手。</p>
           </div>
         </article>
-        <article class="cast-card" data-reveal>
+        <article class="cast-card" data-actor="scarecrow" data-reveal>
           <img src="./assets/actors/enemy_scarecrow.png" alt="饥饿稻草人">
           <div>
             <span>守到名字烂掉</span>
             <h3>饥饿稻草人</h3>
-            <p>恐惧和命令被绑在一起之后留下的自动程序。它不追远，因为逃出去的人迟早会回来。</p>
+            <p>它不是恐怖本身，而是田野留下的警告。它守在边界，提醒所有人：逃出去的人迟早会被饥饿带回来。</p>
           </div>
         </article>
-        <article class="cast-card boss" data-reveal>
+        <article class="cast-card boss" data-actor="king" data-reveal>
           <img src="./assets/actors/boss_barn_king.png" alt="谷仓王">
           <div>
             <span>献出胃的那一天</span>
             <h3>谷仓王</h3>
-            <p>他曾让很多人活过冬天。田地接受了他，也学会了通过他继续索要。</p>
+            <p>屠龙的英雄最后成了恶龙。他曾献出自己拯救饥民，如今却替田野收割更多百姓。</p>
           </div>
         </article>
       </div>
@@ -123,16 +135,21 @@
     <section id="mechanic" class="mechanic-section">
       <div class="section-head" data-reveal>
         <p class="section-kicker">Combat System</p>
-        <h2>不是按按钮，是一次提交给圣匣的证词。</h2>
+        <h2>不是按钮<br>是一次提交给圣匣的证词</h2>
       </div>
       <div class="mechanic-grid">
         <article class="turn-card" data-reveal>
+          <div class="combat-portrait-row" aria-hidden="true">
+            <img src="./assets/actors/player_echo.png" alt="">
+            <span></span>
+            <img src="./assets/actors/enemy_farmer.png" alt="">
+          </div>
           <h3>玩家行动轮</h3>
           <div class="skill-row">
-            <figure><img src="./assets/ui/skills/skill_silver_blade_sign.png" alt=""><figcaption>银刃划押</figcaption></figure>
-            <figure><img src="./assets/ui/skills/skill_execution_falling_blade.png" alt=""><figcaption>处刑落刃</figcaption></figure>
-            <figure><img src="./assets/ui/skills/skill_old_book_shelter.png" alt=""><figcaption>旧册庇护</figcaption></figure>
-            <figure><img src="./assets/ui/skills/skill_gray_candle_verdict.png" alt=""><figcaption>灰烛判决</figcaption></figure>
+            <figure><img src="./assets/ui/skills/skill_silver_blade_sign.png" alt=""><figcaption>攻击</figcaption></figure>
+            <figure><img src="./assets/ui/skills/skill_execution_falling_blade.png" alt=""><figcaption>重击</figcaption></figure>
+            <figure><img src="./assets/ui/skills/skill_old_book_shelter.png" alt=""><figcaption>蓄防</figcaption></figure>
+            <figure><img src="./assets/ui/skills/skill_gray_candle_verdict.png" alt=""><figcaption>大招</figcaption></figure>
           </div>
           <p>攻击与重击主动发起判定；蓄防会让下一次防御投两次 D20 取高，并在成功时反弹伤害；攻击累计三次后，大招投 D6 直伤，无视防御。</p>
         </article>
@@ -145,21 +162,9 @@
           </div>
           <div class="dice-copy">
             <h3>骰子舞台</h3>
-            <p>D20 决定命中与防御，D3 决定伤害或加成，D6 留给灰烛判决。结果不是桌游趣味，而是归档、证明和代价。</p>
+          <p>D20 决定命中与防御，D3 决定伤害或加成，D6 留给灰烛判决。结果不是桌游趣味，而是归档、证明和代价。</p>
           </div>
         </article>
-      </div>
-    </section>
-
-    <section class="loot-section">
-      <div class="section-head" data-reveal>
-        <p class="section-kicker">Remains</p>
-        <h2>战利品不是奖励，是证据。</h2>
-      </div>
-      <div class="loot-row">
-        <figure data-reveal><img src="./assets/ui/items/loot_empty_bowl_shard.png" alt=""><figcaption>空碗残片</figcaption></figure>
-        <figure data-reveal><img src="./assets/ui/items/loot_dirty_silver_registry_tag.png" alt=""><figcaption>脏银登记牌</figcaption></figure>
-        <figure data-reveal><img src="./assets/ui/items/loot_barn_key_fragment.png" alt=""><figcaption>谷仓钥匙碎片</figcaption></figure>
       </div>
     </section>
 
@@ -178,18 +183,67 @@
       </figure>
     </section>
 
-    <section id="route" class="demo-route">
+    <section id="questions" class="philosophy-section">
+      <div class="section-head" data-reveal>
+        <p class="section-kicker">Questions</p>
+        <h2>我们想让玩家<br>带走的问题</h2>
+        <p class="section-lead">这不是一套单纯解释设定的世界观。它更像一组被玩法反复追问的命题：稳定从哪里来，理性为什么先制造混乱，英雄怎样被制度吞掉，而吸收神明残躯的主角又还能否保持自己。</p>
+      </div>
+      <div class="question-grid">
+        <article class="question-card" data-reveal>
+          <span>01</span>
+          <h3>神权的稳定是真的吗？</h3>
+          <p>旧神过滤万音，世界看似稳定。但这种稳定建立在身体、牺牲和垄断之上。</p>
+        </article>
+        <article class="question-card" data-reveal>
+          <span>02</span>
+          <h3>理性之后为何先是混沌？</h3>
+          <p>宇宙从未知走向有知，频率却先崩乱。启蒙不是立即带来秩序，而是先暴露旧秩序的脆弱。</p>
+        </article>
+        <article class="question-card" data-reveal>
+          <span>03</span>
+          <h3>英雄如何成为恶龙？</h3>
+          <p>谷仓王献祭自己救人，却被田野改写成收割者。善意被制度吸收后，也可能变成暴力。</p>
+        </article>
+        <article class="question-card" data-reveal>
+          <span>04</span>
+          <h3>吞下神之后，我还是我吗？</h3>
+          <p>主角用“无音”收纳“万音”，把神的胃囊吸收到身体里。力量进入身体之后，自我边界也开始动摇。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="demo" class="demo-route">
       <div class="route-copy" data-reveal>
         <p class="section-kicker">Classroom Route</p>
-        <h2>最后留下的问题：你愿意被保存成什么？</h2>
+        <h2>主角要终止田野的吞噬<br>也要承受神的胃囊</h2>
       </div>
       <ol class="route-list">
-        <li data-reveal><span>01</span><b>主角醒来</b><em>收藏家与圣匣建立回收关系。</em></li>
-        <li data-reveal><span>02</span><b>低语田野</b><em>粮仓反转为胃囊，饥饿成为制度。</em></li>
-        <li data-reveal><span>03</span><b>四个敌人</b><em>空腹者、农夫、稻草人、谷仓王分别证明制度如何运转。</em></li>
-        <li data-reveal><span>04</span><b>卡牌骰子</b><em>玩家选择行动，系统用骰子归档结果。</em></li>
-        <li data-reveal><span>05</span><b>圣匣归档</b><em>胜利不是逃出田野，而是决定把哪块残骸带回下一轮。</em></li>
+        <li data-reveal><span>01</span><b>旧神爆裂</b><em>宇宙频率从稳定变成崩乱，神权秩序瓦解</em></li>
+        <li data-reveal><span>02</span><b>胃的残躯</b><em>旧神之胃污染低语田野，让生产之地变成吞噬器官</em></li>
+        <li data-reveal><span>03</span><b>谷仓王献祭</b><em>英雄想用自己换粮食，却成为田野收割人类的代表</em></li>
+        <li data-reveal><span>04</span><b>无韵回响</b><em>主角用自己的无音收纳万音，吸收神之胃囊</em></li>
+        <li data-reveal><span>05</span><b>圣匣归档</b><em>胜利不是逃出田野，而是带着新的残躯继续成为自己</em></li>
       </ol>
+    </section>
+
+    <section id="credits" class="credits-section">
+      <img class="credits-bg" src="./assets/backgrounds/bg_silent_casket_collector_intro.png" alt="">
+      <div class="credits-vignette"></div>
+      <img class="credits-player" src="./assets/actors/player_echo.png" alt="无韵回响">
+      <img class="credits-collector" src="./assets/portraits/portrait_collector_halfbody.png" alt="收藏家">
+      <div class="credits-copy" data-reveal>
+        <p class="section-kicker">Credits</p>
+        <h2>制作人</h2>
+        <div class="credits-list">
+          <p>华东师范大学戏剧与影视硕士：刘秉昂</p>
+          <p>华东师范大学新闻与传播硕士：金荣俊</p>
+          <p>华东师范大学戏剧与影视硕士：孙慧</p>
+        </div>
+        <p class="credits-note">这是一个关于旧神、饥饿、人格、残骸、三位研究生和一个代码劳动力试图按时做出游戏的项目。</p>
+        <p class="credits-warning">如果你在低语田野里听见土地说话，别回头！</p>
+        <p class="credits-joke">大概率是 Boss 机制，也可能是策划又加需求了……</p>
+      </div>
     </section>
   </main>
 
